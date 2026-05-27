@@ -34,3 +34,5 @@ jobs:
 
       - name: Train model (${{ matrix.model_type }})
         run: uv run outlier_detector_training.py ${{ matrix.model_type }}
+
+# test
