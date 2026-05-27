@@ -12,9 +12,11 @@ jobs:
       fail-fast: false
       matrix:
         model_type: [random_forest, random_forest_v2, logistic_regression]
-    env:
-      MLFLOW_TRACKING_URI: ${{ vars.MLFLOW_TRACKING_URI }}
-      MLFLOW_TRACKING_USERNAME: ${{ vars.MLFLOW_TRACKING_USERNAME }}
+  env:
+    MLFLOW_TRACKING_URI: ${{ vars.MLFLOW_TRACKING_URI }}
+    MLFLOW_TRACKING_USERNAME: ${{ vars.MLFLOW_TRACKING_USERNAME }}
+    MLFLOW_TRACKING_PASSWORD: ${{ secrets.MLFLOW_TRACKING_PASSWORD }}
+
     steps: 
       - uses: actions/checkout@v4
 
