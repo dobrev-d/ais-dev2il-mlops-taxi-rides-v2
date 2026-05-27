@@ -12,7 +12,7 @@ of [New York City taxi rides](https://www.nyc.gov/site/tlc/about/tlc-trip-record
 2. Make sure you are working on the `main` branch.
 3. Install dependencies:
    ```bash
-   uv sync
+   uv sync nali we
    ```
 
 You're ready to go! 🚀
