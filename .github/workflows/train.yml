@@ -7,7 +7,7 @@ on:
     - "example-data/data/**"
     - "uv.lock"
     - "outlier_detector_training.py"
-  workflow_dispatch:i
+  workflow_dispatch:
 
 jobs:
   train:
